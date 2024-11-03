@@ -1,90 +1,61 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 
 <head>
-    <title>Maafin aku ya!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aku ingin kamu </title>
     <style>
         body {
-            background-color: #f0f8ff; /* Light blue background */
-            color: #333; /* Dark text color */
-            font-family: Arial, sans-serif; /* Font style */
+            background-color: #e6f7ff; /* Warna latar belakang */
+            color: #333; /* Warna teks */
+            font-family: Arial, sans-serif; /* Jenis font */
+            text-align: center; /* Pusatkan teks */
+            padding: 50px; /* Tambahkan padding */
         }
 
         h1 {
-            color: #ff4500; /* Orange color for headings */
-            text-align: center; /* Center align headings */
+            color: #ff69b4; /* Warna pink untuk judul */
         }
 
-        #By, #Bn {
-            position: absolute;
-            width: 210px;
-            height: 210px;
+        #message {
+            font-size: 24px; /* Ukuran font untuk pesan */
+            margin: 20px 0; /* Margin atas dan bawah */
         }
 
-        #By {
-            left: 64px;
-            top: 370px;
+        #kangenButton {
+            padding: 10px 20px; /* Padding untuk tombol */
+            font-size: 18px; /* Ukuran font untuk tombol */
+            cursor: pointer; /* Ubah kursor saat hover */
+            background-color: #ff69b4; /* Warna latar belakang tombol */
+            color: white; /* Warna teks tombol */
+            border: none; /* Hapus border tombol */
+            border-radius: 5px; /* Sudut melingkar */
+            transition: background-color 0.3s; /* Transisi untuk hover */
         }
 
-        #Bn {
-            left: 166px;
-            top: 370px;
-        }
-
-        img {
-            display: block;
-            margin: 0 auto; /* Center the image */
-        }
-
-        input[type="button"] {
-            width: 100%;
-            height: 100%;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        input[type="button"]:hover {
-            background-color: #ffa07a; /* Light salmon on hover */
+        #kangenButton:hover {
+            background-color: #ff1493; /* Warna saat hover */
         }
     </style>
-    <script type="text/javascript">
-        let flag = 1;
-
-        function f1() {
-            alert("Makasih ya udah maafin aku!");
-        }
-
-        function f() {
-            const Bn = document.getElementById("Bn");
-            if (flag == 1) {
-                Bn.style.top = "400px";
-                Bn.style.left = "300px";
-                flag = 2;
-            } else if (flag == 2) {
-                Bn.style.top = "400px";
-                Bn.style.left = "50px";
-                flag = 3;
-            } else if (flag == 3) {
-                Bn.style.top = "370px";
-                Bn.style.left = "166px";
-                flag = 1;
-            }
-        }
-    </script>
 </head>
 
 <body>
-    <h1>MAAFIN AKU YA!</h1>
-    <img alt="hati" src="https://bit.ly/3AC63BR" height="200" />
-    <h1>Halo, aku minta maaf udah bikin marah dan bikin kamu kecewa. Aku janji kalau kamu balik lagi engga bakal diulangi lagi. Aku tau km lagi sakit tapi aku gak mau lepas dari kamu.</h1>
+    <h1>i really miss you </h1>
+    <div id="message">aku pengin kamu yang dulu </div>
+    <button id="kangenButton" onclick="showLoveMessage()">Coba pencet !</button>
 
-    <div id="By">
-        <input type="button" value="YA" onClick="f1()" />
+    <script>
+        function showLoveMessage() {
+            alert("Semoga kamu bisa menerima aku walau banyak kurangnya, love you ");
+        }
+    </script>
+    <div>
+        <img src="WhatsApp Image 2024-10-31 at 20.21.06_cf465e8f.jpg" alt="" width="200" height="300">
     </div>
-    <img src="WhatsApp Image 2024-10-31 at 20.21.06_cf465e8f.jpg" alt= "" width="200" height="300">
-
-    <div id="Bn">
-        <input type="button" value="TIDAK" onMouseOver="f()" />
-    </div>
+</body>
+<body>
+    <img src="WhatsApp Image 2024-10-31 at 20.24.43_b8664991.jpg" alt="" width="200" height="300">
 </body>
 
 </html>
